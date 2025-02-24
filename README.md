@@ -4,7 +4,7 @@ This repo aims to centralise my all public slides, talks, community workshop, co
 
 |     | **Meetup/Conference**                             | **Slides** | **Date**     | **Venue**                |
 |-----|--------------------------------------------------|------------|--------------|--------------------------|
-| 1   | Cloud Native LLMOps Day                           |            | 22-02-2025   | Microsoft Reactor, BLR   |
+| 1   | Cloud Native LLMOps Day: LLM AI Security Framework                           |            | 22-02-2025   | Microsoft Reactor, BLR   |
 
 # Year 2024
 
