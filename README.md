@@ -2,9 +2,10 @@ This repo aims to centralise my all public slides, talks, community workshop, co
 
 # Year 2025
 
-|     | **Meetup/Conference**                             | **Slides** | **Date**     | **Venue**                |
-|-----|--------------------------------------------------|------------|--------------|--------------------------|
-| 1   | Cloud Native LLMOps Day: LLM AI Security Framework                           | [slides](https://github.com/sivolko/my-talk-slides/blob/main/slides/LLM%20Security%20Framework.pdf)           | 22-02-2025   | Microsoft Reactor, BLR   |
+|   	| **Meetup/Conference**                                                           	| **Slides**                                                                                          	| **Date**   	| **Venue**              	|
+|---	|---------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------------	|------------	|------------------------	|
+| 1 	| Cloud Native LLMOps Day: LLM AI Security Framework                              	| [slides](https://github.com/sivolko/my-talk-slides/blob/main/slides/LLM%20Security%20Framework.pdf) 	| 22-02-2025 	| Microsoft Reactor, BLR 	|
+| 2 	| SecObs for GenAI: Navigating the Security Landscape with Next-Gen Observability 	| [slides](https://github.com/sivolko/my-talk-slides/blob/main/slides/SecObs-HPE-talk.pdf)            	| 26-04-2025 	| HPE Office, BLR        	|
 
 # Year 2024
 
