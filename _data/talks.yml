@@ -1,0 +1,77 @@
+# 2025 Talks
+- year: 2025
+  title: "Cloud Native LLMOps Day: LLM AI Security Framework"
+  date: "22-02-2025"
+  venue: "Microsoft Reactor, BLR"
+  slides_url: "/assets/slides/2025/llm-security-framework.pdf"
+
+- year: 2025
+  title: "SecObs for GenAI: Navigating the Security Landscape with Next-Gen Observability"
+  date: "26-04-2025"
+  venue: "HPE Office, BLR"
+  slides_url: "/assets/slides/2025/SecObs-HPE-talk.pdf"
+
+# 2024 Talks
+- year: 2024
+  title: "Kubetools Day B'LR: Shift Left and Fix Vulnerabilities with Docker Scout"
+  date: "20-Jan-24"
+  venue: "NMIT"
+  slides_url: "/assets/slides/2024/docker-scout-security.pdf"
+
+- year: 2024
+  title: "Expert Live India'24 Shift Left : Code to Cloud Security"
+  date: "16-02-24"
+  venue: "Microsoft Fern Office, B'LR"
+  slides_url: "/assets/slides/2024/code-to-cloud-security.pdf"
+
+- year: 2024
+  title: "Elastic Meetup: Getting started with ELK SIEM with Kali Purple"
+  venue: "Elastic Office"
+  slides_url: "/assets/slides/2024/elk-siem-kali.pdf"
+
+- year: 2024
+  title: "Microsoft AI tour (Satya Nadella's India Visit) ,B'lr : Security Copilot Booth"
+  date: "08-02-24"
+  venue: "Lalit Ashok, B'LR"
+  slides_url: "/assets/slides/2024/security-copilot-demo.pdf"
+
+- year: 2024
+  title: "Kubetools Day 2.0: Threat Modeling your K8s Cluster"
+  date: "18-05-24"
+  venue: "Guidewire"
+  slides_url: "/assets/slides/2024/k8s-threat-modeling.pdf"
+
+- year: 2024
+  title: "Microsoft Security Copilot hands-on-demo"
+  venue: "Microsoft Fern Office (ADC)"
+  slides_url: "/assets/slides/2024/security-copilot-hands-on.pdf"
+
+- year: 2024
+  title: "GitTogether Shift Left with GHAS"
+  date: "24-08-24"
+  venue: "Microsoft Fern Office B'LR"
+  slides_url: "/assets/slides/2024/ghas-shift-left.pdf"
+
+- year: 2024
+  title: "GenAI solution in CyberSecurity ft. MS Security Copilot"
+  date: "28-09-24"
+  venue: "Alliance University B'LR"
+  slides_url: "/assets/slides/2024/genai-cyber-security.pdf"
+
+- year: 2024
+  title: "Code Like Hacker: Secure Terraform Practices"
+  date: "23-11-24"
+  venue: "Nokia B'LR"
+  slides_url: "/assets/slides/2024/secure-terraform.pdf"
+
+- year: 2024
+  title: "Let us Defend : Ms Sentinel Applied Skills"
+  date: "27-12-24"
+  venue: "Microsoft Luxor B'LR"
+  slides_url: "/assets/slides/2024/ms-sentinel-skills.pdf"
+
+- year: 2024
+  title: "Azure Developer Day : AI in CyberSecurity with MS Security Copilot"
+  date: "28-12-24"
+  venue: "Microsoft Luxor B'LR"
+  slides_url: "/assets/slides/2024/ai-cybersecurity-copilot.pdf"

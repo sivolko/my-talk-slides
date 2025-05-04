@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<header>
+  <h1>{{ page.title }}</h1>
+  <p class="tagline">Dive into my latest talks and meetup moments—where ideas spark and connections grow! 🚀📸</p>
+</header>
+
+<!-- Image Slider -->
+<section>
+  <h2>Latest Meetup Photos</h2>
+  <div class="image-slider">
+    {% for photo in site.data.meetup_photos %}
+    <a class="gallery-item slider-card" 
+       href="{{ photo.image_url }}" 
+       data-lg-size="1600-1067"
+       data-sub-html="<h4>{{ photo.caption }}</h4>">
+      <img src="{{ photo.image_url }}" alt="{{ photo.alt }}">
+      <p>{{ photo.caption }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Talks Section -->
+<section>
+  <h2>Conference Talks & Meetups</h2>
+  
+  {% assign talks_by_year = site.data.talks | group_by:"year" | sort: "name" | reverse %}
+  {% assign current_year = site.time | date: "%Y" %}
+  {% for year_group in talks_by_year %}
+  <div class="year-section">
+    <div class="year-header">
+      <span>{{ year_group.name }}</span>
+      {% if year_group.name == current_year %}Current Year{% else %}Past Year{% endif %}
+    </div>
+    <table class="talks-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Meetup/Conference</th>
+          <th>Slides</th>
+          <th>Date</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for talk in year_group.items %}
+        <tr>
+          <td>{{ forloop.index }}</td>
+          <td>{{ talk.title }}</td>
+          <td>
+            {% assign slide_path = talk.slides_url | prepend: site.baseurl %}
+            {% assign file_exists = site.static_files | where: "path", slide_path | first %}
+            {% if talk.slides_url %}
+              {% if file_exists %}
+                <a href="{{ slide_path }}" class="slide-link available" target="_blank" title="View slides">
+                  <span class="slide-icon">📊</span>
+                  <span class="slide-text">View Slides</span>
+                </a>
+              {% else %}
+                <span class="slide-link coming-soon" title="Slides coming soon">
+                  <span class="slide-icon">⏳</span>
+                  <span class="slide-text">Coming Soon</span>
+                </span>
+              {% endif %}
+            {% else %}
+              <span class="slide-link unavailable" title="No slides available">-</span>
+            {% endif %}
+          </td>
+          <td class="date">{{ talk.date }}</td>
+          <td class="venue">{{ talk.venue }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endfor %}
+</section>

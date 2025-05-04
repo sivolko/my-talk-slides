@@ -1,0 +1,175 @@
+@import "variables";
+
+// Site header
+.site-header {
+  border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin: 0;
+  color: $text-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $brand-color;
+  }
+}
+
+// Site footer
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+  text-align: center;
+  background-color: $background-color;
+}
+
+.footer-text {
+  margin: 0;
+  color: $grey-color;
+  font-size: 0.9rem;
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: $half-spacing-unit;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: $grey-color;
+  margin-left: $half-spacing-unit * -1;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $half-spacing-unit;
+  padding-left: $half-spacing-unit;
+}
+
+.footer-col-1 {
+  width: 35%;
+}
+
+.footer-col-2 {
+  width: 20%;
+}
+
+.footer-col-3 {
+  width: 45%;
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: 50%;
+  }
+
+  .footer-col-3 {
+    width: 100%;
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: 100%;
+  }
+}
+
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1 0 auto;
+}
+
+.page-heading {
+  font-size: 32px;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
+}
+
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title,
+.post-content h1 {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}
+
+.wrapper {
+  max-width: $content-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+}

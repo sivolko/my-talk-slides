@@ -1,0 +1,40 @@
+# Sample meetup photos - replace with your actual photos
+- image_url: "/assets/images/hpe.jpeg"
+  alt: "Meetup Photo 1"
+  caption: "HPE SecObsp 2025"
+
+- image_url: "/assets/images/nokia.jpeg"
+  alt: "Meetup Photo 2"
+  caption: "Nokia- Nvidia 2025"
+
+- image_url: "/assets/images/guidewire.JPG"
+  alt: "Meetup Photo 3"
+  caption: "Guidewire -2024"
+
+- image_url: "/assets/images/profile.jpeg"
+  alt: "Meetup Photo 3"
+  caption: "Black Hat Singapore"
+
+- image_url: "/assets/images/gitt.png"
+  alt: "Meetup Photo 3"
+  caption: "Git Toghether B'LR"
+
+- image_url: "/assets/images/add.jpeg"
+  alt: "Meetup Photo 3"
+  caption: "Azure Developer Day B'LR"
+
+- image_url: "/assets/images/guide.jpeg"
+  alt: "Meetup Photo 3"
+  caption: "K8s threat Modeling"
+
+- image_url: "/assets/images/ttf.jpeg"
+  alt: "Meetup Photo 3"
+  caption: "write Secure .tf code"
+
+- image_url: "/assets/images/add.jpeg"
+  alt: "Meetup Photo 3"
+  caption: "Azure Developer Day B'LR"
+
+- image_url: "/assets/images/scd.jpeg"
+  alt: "Meetup Photo 3"
+  caption: "MS security Copilot Booth"

@@ -1,0 +1,237 @@
+@import "variables";
+
+// Talks page styles
+.image-slider {
+  padding: $half-spacing-unit;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  .gallery-item {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+}
+
+.slider-card {
+  width: 100%;
+  border: 1px solid $grey-color-light;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: $background-color;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid $grey-color-light;
+    border-radius: 10px 10px 0 0;
+  }
+
+  p {
+    margin: $half-spacing-unit;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    color: $text-color;
+  }
+}
+
+.talks-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  background: $background-color;
+
+  th {
+    background: linear-gradient(135deg, #9575CD, #B39DDB);
+    color: $background-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1.2rem 1rem;
+    border-bottom: 3px solid #7E57C2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(135deg, #7E57C2, #9575CD);
+    }
+  }
+
+  thead tr {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  tr:hover {
+    background-color: $grey-color-light;
+  }
+
+  td {
+    padding: $half-spacing-unit;
+    border: 1px solid $grey-color-light;
+    vertical-align: middle;
+  }
+}
+
+.slide-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  &.available {
+    background: #8BC34A;
+    color: white !important;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background: #7CB342;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &.coming-soon {
+    background: #FFA726;
+    color: white !important;
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+
+  &.unavailable {
+    color: $grey-color;
+    background: none;
+    cursor: default;
+  }
+}
+
+.slide-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.year-section {
+  margin: $spacing-unit 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: $background-color;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.year-header {
+  padding: $spacing-unit;
+  font-size: 2rem;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid $grey-color-light;
+
+  span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $text-color;
+  }
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: $grey-color;
+  text-align: center;
+  margin-bottom: $spacing-unit;
+  font-style: italic;
+}
+
+@include media-query($on-palm) {
+  .image-slider {
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: $half-spacing-unit;
+    gap: 15px;
+  }
+
+  .slider-card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .image-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .image-slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .talks-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    th, td {
+      padding: $half-spacing-unit;
+      font-size: 0.9rem;
+    }
+  }
+
+  .year-header {
+    padding: $half-spacing-unit;
+    font-size: 1.5rem;
+
+    span {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+// Lightbox customizations
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lg-toolbar .lg-icon:hover {
+  color: $brand-color;
+}
