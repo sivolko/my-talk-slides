@@ -2,7 +2,7 @@ title: My Talks and Meetups
 short_title: Dive into my latest talks and meetup moments—where ideas spark and connections grow! 🚀📸
 email: shubhendushubham98@gmail.com
 description: Showcasing my conference talks, meetups, and community contributions
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/my-talk-slides" # the subpath of your site, e.g. /blog
 url: "https://sivolko.github.io" # your GitHub Pages URL
 github_username: sivolko
 

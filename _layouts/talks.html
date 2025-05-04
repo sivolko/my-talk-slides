@@ -12,10 +12,10 @@ layout: default
   <div class="image-slider">
     {% for photo in site.data.meetup_photos %}
     <a class="gallery-item slider-card" 
-       href="{{ photo.image_url }}" 
+       href="{{ photo.image_url | relative_url }}" 
        data-lg-size="1600-1067"
        data-sub-html="<h4>{{ photo.caption }}</h4>">
-      <img src="{{ photo.image_url }}" alt="{{ photo.alt }}">
+      <img src="{{ photo.image_url | relative_url }}" alt="{{ photo.alt }}">
       <p>{{ photo.caption }}</p>
     </a>
     {% endfor %}
