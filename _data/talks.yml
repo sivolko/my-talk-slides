@@ -11,6 +11,12 @@
   venue: "HPE Office, BLR"
   slides_url: "/assets/slides/2025/SecObs-HPE-talk.pdf"
 
+- year: 2025
+  title: "Unmasking Code: Reverse Engineering with Ghidra & MCP"
+  date: "17-05-2025"
+  venue: "FAI Office, BLR"
+  slides_url: "/assets/slides/2025/ghidra-with-mcp.pdf"
+
 # 2024 Talks
 - year: 2024
   title: "Kubetools Day B'LR: Shift Left and Fix Vulnerabilities with Docker Scout"

@@ -1,4 +1,8 @@
 # Sample meetup photos - replace with your actual photos
+- image_url: "https://res.cloudinary.com/hugs4bugs/image/upload/v1747659814/Meetup/IMG_20250519_182732_xaiucu.jpg"
+  alt: "Meetup Photo 1"
+  caption: "FAI Meetup 2025"
+
 - image_url: "/assets/images/hpe.jpeg"
   alt: "Meetup Photo 1"
   caption: "HPE SecObsp 2025"
